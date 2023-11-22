@@ -1,0 +1,59 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="games.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" style="text-align: left; font-size: 48px; color: #fff; text-decoration: none; text-transform: uppercase; text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f;"><b>NexusMaster</b></a></h1>
+        <h2>Contact Us</h2>
+        <nav>
+            <ul>
+                <li><a href="games.html">Games</a></li>
+                &nbsp;
+                <li><a href="reviews.html">Reviews</a></li>
+                &nbsp;
+                <li><a href="#">News</a></li>
+                &nbsp;
+                <li><a href="contact.html">Contact</a></li>
+                &nbsp;
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <button id="theme-switch" onclick="toggleTheme()">Change Theme</button>
+    </header>
+
+    <main>
+        <form id="contactForm" action="mailto:marco.fenyvesi12@gmail.com" method="post" enctype="text/plain" onsubmit="this.submit(); this.reset(); return false;">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefon">Telefon:</label>
+            <input type="tel" id="telefon" name="telefon" pattern="[0-9]+" minlength="10" maxlength="10" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2023 NexusMaster</p>
+    </footer>
+    
+    <button id="scrollToTopBtn" onclick="scrollToTop()">Scroll to Top</button>
+    <button id="scrollToBottomBtn" onclick="scrollToBottom()">Scroll to Bottom</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>

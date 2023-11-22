@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusMaster</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" style="text-align: left; font-size: 48px; color: #fff; text-decoration: none; text-transform: uppercase; text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f;"><b>NexusMaster</b></a></h1>
+        <nav>
+            <ul>
+                <li><a href="games.html">Games</a></li>
+                &nbsp;
+                <li><a href="reviews.html">Reviews</a></li>
+                &nbsp;
+                <li><a href="#">News</a></li>
+                &nbsp;
+                <li><a href="contact.html">Contact</a></li>
+                &nbsp;
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+
+        <div class="search-bar">
+            <form action="/search" method="get">
+                <input type="text" name="q" placeholder="Search..." required>
+                &nbsp;
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <br>
+        <button id="theme-switch" onclick="toggleTheme()">Change Theme</button>
+    </header>
+
+    <main>
+        <section>
+            <h2>Featured Games</h2>
+            <ol class="featured-games-list">
+                <li>
+                    <img src="GhostRecon.jpeg" alt="TOM CLANCY'S GHOST RECON BREAKPOINT">
+                    <p>GHOST RECON BREAKPOINT</p>
+                </li>
+                <li>
+                    <img src="FARCRY6.jpg" alt="FARCRY 6">
+                    <p>FARCRY 6</p>
+                </li>
+                <li>
+                    <img src="DARK SOULS III.jpg" alt="DARK SOULS III">
+                    <p>DARK SOULS III</p>
+                </li>
+                <li>
+                    <img src="GROUNDED.jpg" alt="GROUNDED">
+                    <p>GROUNDED</p>
+                </li>
+                <li>
+                    <img src="TOMB RAIDER.jpg" alt="TOMB RAIDER">
+                    <p>TOMB RAIDER</p>
+                </li>
+                <li>
+                    <img src="Mortal Kombat 1.jpeg" alt="MORTAL KOMBAT 1">
+                    <p>MORTAL KOMBAT 1</p>
+                </li>
+                <li>
+                    <img src="SPIDER-MAN 2.webp" alt="SPIDER-MAN 2">
+                    <p>SPIDER-MAN 2</p>
+                </li>
+                <li>
+                    <img src="BATMAN ARKHAM CITY.jpg" alt="BATMAN ARKHAM CITY">
+                    <p>BATMAN ARKHAM CITY</p>
+                </li>
+            </ol>
+        </section>
+
+<section>
+    <h2>Free Games</h2>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="game" id="game1">
+                <img src="DOTA2.jpg" alt="Free Game 1" style="height: 330px; width: 220px;">
+            </div>
+            <div class="game" id="game2">
+                <img src="Tf2.jpg" alt="Free Game 2" style="height: 330px; width: 220px;">
+            </div>
+            <div class="game" id="game3">
+                <img src="VALORANT.jpg" alt="Free Game 3" style="height: 330px; width: 220px;">
+            </div>
+            <div class="game" id="game5">
+                <img src="FORTNITE.jpg" alt="Free Game 5" style="height: 330px; width: 220px;">
+            </div>
+            <div class="game" id="game6">
+                <img src="CSGO.jpg" alt="Free Game 6" style="height: 330px; width: 220px;">
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2023 NexusMaster</p>
+
+        <div class="social-media-buttons">
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                <img src="youtube-icon.png" alt="YouTube">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <img src="instagram-icon.png" alt="Instagram">
+            </a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                <img src="twitter-icon.png" alt="Twitter">
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                <img src="github-icon.png" alt="GitHub">
+            </a>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" onclick="scrollToTop()">Scroll to Top</button>
+    <button id="scrollToBottomBtn" onclick="scrollToBottom()">Scroll to Bottom</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

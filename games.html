@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusMaster - Games</title>
+    <link rel="stylesheet" href="games.css">
+    <script src="games.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" style="text-align: left; font-size: 48px; color: #fff; text-decoration: none; text-transform: uppercase; text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f;"><b>NexusMaster</b></a></h1>
+        <nav>
+            <ul>
+                <li><a href="games.html">Games</a></li>
+                &nbsp;
+                <li><a href="reviews.html">Reviews</a></li>
+                &nbsp;
+                <li><a href="#">News</a></li>
+                &nbsp;
+                <li><a href="contact.html">Contact</a></li>
+                &nbsp;
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+
+        <div class="search-bar">
+            <form id="searchForm">
+                <input type="text" id="searchInput" name="q" placeholder="Search...">
+                &nbsp;
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <br>
+        <button id="theme-switch" onclick="toggleTheme()">Change Theme</button>
+    </header>
+
+    <main>
+        <section>
+            <h2>Game List</h2>
+            <table id="gamesTable">
+                <thead>
+                    <tr>
+                        <th>Game Title</th>
+                        <th>Genre</th>
+                        <th>Release Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>TOM CLANCY'S GHOST RECON BREAKPOINT</td>
+                        <td>Action-Shooter</td>
+                        <td>2020-10-04</td>
+                    </tr>
+
+                    <tr>
+                        <td>FARCRY 6</td>
+                        <td>Action-Shooter</td>
+                        <td>2021-10-07</td>
+                    </tr>
+
+                    <tr>
+                        <td>DARK SOULS III</td>
+                        <td>Action</td>
+                        <td>2016-03-24</td>
+                    </tr>
+
+                    <tr>
+                        <td>GROUNDED</td>
+                        <td>Survival-Action-Adventure</td>
+                        <td>2020-07-28</td>
+                    </tr>
+
+                    <tr>
+                        <td>TOMB RAIDER</td>
+                        <td>Action-Adventure</td>
+                        <td>2013-03-05</td>
+                    </tr>
+
+                    <tr>
+                        <td>MORTAL KOMBAT 1</td>
+                        <td>Fighting</td>
+                        <td>2023-09-14</td>
+                    </tr>
+
+                    <tr>
+                        <td>SPIDER-MAN 2</td>
+                        <td>Action-Adventure</td>
+                        <td>2023-10-20</td>
+                    </tr>
+
+                    <tr>
+                        <td>BATMAN ARKHAM CITY</td>
+                        <td>Action-Adventure</td>
+                        <td>2011-10-18</td>
+                    </tr>
+
+                    <tr>
+                        <td>DOTA 2</td>
+                        <td>MOBA</td>
+                        <td>2013-07-09</td>
+                    </tr>
+
+                    <tr>
+                        <td>TEAM FORTRESS 2</td>
+                        <td>Shooter</td>
+                        <td>2007-10-10</td>
+                    </tr>
+
+                    <tr>
+                        <td>VALORANT</td>
+                        <td>Shooter</td>
+                        <td>2020-06-02</td>
+                    </tr>
+
+                    <tr>
+                        <td>FORTNITE</td>
+                        <td>Shooter</td>
+                        <td>2017-07-21</td>
+                    </tr>
+
+                    <tr>
+                        <td>COUNTER STRIKE: GLOBAL OFFENSIVE</td>
+                        <td>Shooter</td>
+                        <td>2012-08-21</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2023 NexusMaster</p>
+    </footer>
+    <button id="scrollToTopBtn" onclick="scrollToTop()">Scroll to Top</button>
+    <button id="scrollToBottomBtn" onclick="scrollToBottom()">Scroll to Bottom</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>

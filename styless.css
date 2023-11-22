@@ -1,0 +1,40 @@
+/* styless.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.carousel {
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s;
+}
+
+.carousel img {
+    width: 300px; /* Set the width of each image */
+    height: auto;
+}
+
+.prev-button, .next-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev-button:hover, .next-button:hover {
+    background-color: #0056b3;
+}
