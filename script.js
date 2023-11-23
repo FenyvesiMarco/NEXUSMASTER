@@ -91,3 +91,7 @@ document.addEventListener('scroll', handleScroll);
 
 // Add this event listener to handle the initial state when the page loads
 document.addEventListener('DOMContentLoaded', handleScroll);
+
+function openHelp() {
+    alert('Search which game you want to play and then buy it!');
+}
