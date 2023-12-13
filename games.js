@@ -72,3 +72,27 @@ document.addEventListener('scroll', handleScroll);
 
 // Add this event listener to handle the initial state when the page loads
 document.addEventListener('DOMContentLoaded', handleScroll);
+
+// games.js
+
+document.addEventListener("DOMContentLoaded", function () {
+    const searchForm = document.getElementById("searchForm");
+    const searchInput = document.getElementById("searchInput");
+    const gamesTable = document.getElementById("gamesTable");
+
+    searchForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const searchTerm = searchInput.value.toLowerCase();
+
+        for (const row of gamesTable.rows) {
+            const gameTitle = row.cells[0].textContent.toLowerCase();
+            const genre = row.cells[1].textContent.toLowerCase();
+
+            if (gameTitle.includes(searchTerm) || genre.includes(searchTerm)) {
+                row.style.display = "";
+            } else {
+                row.style.display = "none";
+            }
+        }
+    });
+});
